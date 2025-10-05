@@ -1,0 +1,303 @@
+# GIT COMANDOS - GUIA COMPLETO
+
+## Configuração Inicial / Initial Setup
+
+**git config --global user.name "Seu Nome"**
+- 🇧🇷 Configura seu nome de usuário globalmente
+- 🇺🇸 Sets your username globally
+
+**git config --global user.email "seu@email.com"**
+- 🇧🇷 Configura seu email globalmente
+- 🇺🇸 Sets your email globally
+
+**git init**
+- 🇧🇷 Cria/inicializa um novo repositório Git
+- 🇺🇸 Creates/initializes a new Git repository
+
+## Navegação e Sistema / Navigation and System
+
+**pwd**
+- 🇧🇷 Mostra o diretório atual (caminho completo)
+- 🇺🇸 Shows current directory (full path)
+
+**ls**
+- 🇧🇷 Lista arquivos e pastas no diretório atual
+- 🇺🇸 Lists files and folders in current directory
+
+**ls -la**
+- 🇧🇷 Lista todos os arquivos incluindo ocultos com detalhes
+- 🇺🇸 Lists all files including hidden ones with details
+
+**cd <pasta>**
+- 🇧🇷 Entra na pasta especificada
+- 🇺🇸 Enters the specified folder
+
+**cd ..**
+- 🇧🇷 Volta um nível na estrutura de pastas
+- 🇺🇸 Goes back one level in folder structure
+
+**start .**
+- 🇧🇷 Abre a pasta atual no explorador de arquivos (Windows)
+- 🇺🇸 Opens current folder in file explorer (Windows)
+
+**code .**
+- 🇧🇷 Abre o VS Code no diretório atual
+- 🇺🇸 Opens VS Code in current directory
+
+## Criação e Remoção / Creation and Deletion
+
+**touch <arquivo>**
+- 🇧🇷 Cria um novo arquivo
+- 🇺🇸 Creates a new file
+
+**mkdir <pasta>**
+- 🇧🇷 Cria uma nova pasta
+- 🇺🇸 Creates a new folder
+
+**rm <arquivo>**
+- 🇧🇷 Deleta um arquivo
+- 🇺🇸 Deletes a file
+
+**rm -rf <pasta>**
+- 🇧🇷 Deleta uma pasta e todo seu conteúdo (cuidado!)
+- 🇺🇸 Deletes a folder and all its contents (careful!)
+
+## Comandos Básicos Git / Basic Git Commands
+
+**git status**
+- 🇧🇷 Verifica o status das modificações nos arquivos
+- 🇺🇸 Checks the status of file modifications
+
+**git add <arquivo>**
+- 🇧🇷 Prepara um arquivo específico para commit
+- 🇺🇸 Stages a specific file for commit
+
+**git add .**
+- 🇧🇷 Prepara todos os arquivos modificados para commit de uma vez
+- 🇺🇸 Stages all modified files for commit at once
+
+**git commit -m "mensagem"**
+- 🇧🇷 Cria um commit com uma mensagem descritiva
+- 🇺🇸 Creates a commit with a descriptive message
+
+**git commit -am "mensagem"**
+- 🇧🇷 Adiciona e commita arquivos já rastreados em um comando
+- 🇺🇸 Adds and commits tracked files in one command
+
+## Histórico e Logs / History and Logs
+
+**git log**
+- 🇧🇷 Mostra o histórico completo de commits
+- 🇺🇸 Shows complete commit history
+
+**git log --oneline**
+- 🇧🇷 Mostra histórico resumido em uma linha por commit
+- 🇺🇸 Shows condensed history with one line per commit
+
+**git log --pretty=oneline**
+- 🇧🇷 Mostra commits em formato de uma linha
+- 🇺🇸 Shows commits in one-line format
+
+**git log --abbrev-commit**
+- 🇧🇷 Mostra histórico com hash de commit abreviado
+- 🇺🇸 Shows history with abbreviated commit hash
+
+**git log --graph --oneline --all**
+- 🇧🇷 Visualiza histórico em formato de árvore com todas as branches
+- 🇺🇸 Visualizes history in tree format with all branches
+
+**git diff**
+- 🇧🇷 Mostra diferenças não preparadas (unstaged)
+- 🇺🇸 Shows unstaged differences
+
+**git diff --staged**
+- 🇧🇷 Mostra diferenças preparadas para commit
+- 🇺🇸 Shows staged differences ready for commit
+
+## Branches (Ramificações)
+
+**git branch**
+- 🇧🇷 Lista todas as branches locais
+- 🇺🇸 Lists all local branches
+
+**git branch <nome>**
+- 🇧🇷 Cria uma nova branch
+- 🇺🇸 Creates a new branch
+
+**git branch -d <nome>**
+- 🇧🇷 Deleta uma branch (se já foi merged)
+- 🇺🇸 Deletes a branch (if already merged)
+
+**git branch -D <nome>**
+- 🇧🇷 Força a deleção de uma branch
+- 🇺🇸 Forces branch deletion
+
+**git switch <branch>**
+- 🇧🇷 Troca para a branch especificada
+- 🇺🇸 Switches to specified branch
+
+**git switch -c <nome>**
+- 🇧🇷 Cria uma nova branch e troca para ela
+- 🇺🇸 Creates a new branch and switches to it
+
+**git checkout <branch>**
+- 🇧🇷 Troca para a branch especificada (comando antigo)
+- 🇺🇸 Switches to specified branch (old command)
+
+**git checkout -b <nome>**
+- 🇧🇷 Cria e troca para nova branch (comando antigo)
+- 🇺🇸 Creates and switches to new branch (old command)
+
+**git merge <branch>**
+- 🇧🇷 Mescla a branch especificada na branch atual
+- 🇺🇸 Merges specified branch into current branch
+
+## Repositórios Remotos / Remote Repositories
+
+**git clone <url>**
+- 🇧🇷 Clona um repositório remoto para sua máquina
+- 🇺🇸 Clones a remote repository to your machine
+
+**git remote add origin <url>**
+- 🇧🇷 Conecta seu repositório local a um remoto
+- 🇺🇸 Connects your local repository to a remote one
+
+**git remote -v**
+- 🇧🇷 Lista repositórios remotos conectados
+- 🇺🇸 Lists connected remote repositories
+
+**git push**
+- 🇧🇷 Envia commits para o repositório remoto
+- 🇺🇸 Pushes commits to remote repository
+
+**git push -u origin <branch>**
+- 🇧🇷 Envia branch para remoto e define como upstream
+- 🇺🇸 Pushes branch to remote and sets as upstream
+
+**git push origin --delete <branch>**
+- 🇧🇷 Deleta uma branch no repositório remoto
+- 🇺🇸 Deletes a branch in remote repository
+
+**git pull**
+- 🇧🇷 Baixa e mescla mudanças do repositório remoto
+- 🇺🇸 Downloads and merges changes from remote repository
+
+**git fetch**
+- 🇧🇷 Baixa mudanças do remoto sem mesclar
+- 🇺🇸 Downloads changes from remote without merging
+
+## Desfazendo Mudanças / Undoing Changes
+
+**git restore <arquivo>**
+- 🇧🇷 Descarta mudanças não commitadas em um arquivo
+- 🇺🇸 Discards uncommitted changes in a file
+
+**git restore --staged <arquivo>**
+- 🇧🇷 Remove arquivo da área de staging
+- 🇺🇸 Removes file from staging area
+
+**git reset <arquivo>**
+- 🇧🇷 Remove arquivo da área de staging
+- 🇺🇸 Removes file from staging area
+
+**git reset --soft HEAD~1**
+- 🇧🇷 Desfaz último commit mantendo mudanças em staging
+- 🇺🇸 Undoes last commit keeping changes in staging
+
+**git reset --hard HEAD~1**
+- 🇧🇷 Desfaz último commit e descarta todas as mudanças
+- 🇺🇸 Undoes last commit and discards all changes
+
+**git revert <commit>**
+- 🇧🇷 Cria novo commit que reverte um commit específico
+- 🇺🇸 Creates new commit that reverts a specific commit
+
+## Stash (Armazenamento Temporário)
+
+**git stash**
+- 🇧🇷 Salva mudanças temporariamente sem commit
+- 🇺🇸 Saves changes temporarily without committing
+
+**git stash list**
+- 🇧🇷 Lista todas as stashes salvas
+- 🇺🇸 Lists all saved stashes
+
+**git stash pop**
+- 🇧🇷 Aplica e remove a stash mais recente
+- 🇺🇸 Applies and removes most recent stash
+
+**git stash apply**
+- 🇧🇷 Aplica stash sem removê-la
+- 🇺🇸 Applies stash without removing it
+
+**git stash drop**
+- 🇧🇷 Remove a stash mais recente
+- 🇺🇸 Removes most recent stash
+
+## Arquivos Especiais / Special Files
+
+**touch .gitignore**
+- 🇧🇷 Cria arquivo para listar arquivos/pastas a serem ignorados pelo Git
+- 🇺🇸 Creates file to list files/folders to be ignored by Git
+
+**git rm --cached <arquivo>**
+- 🇧🇷 Remove arquivo do Git mas mantém no disco
+- 🇺🇸 Removes file from Git but keeps on disk
+
+## Tags (Etiquetas)
+
+**git tag <nome>**
+- 🇧🇷 Cria uma tag no commit atual
+- 🇺🇸 Creates a tag on current commit
+
+**git tag -a <nome> -m "mensagem"**
+- 🇧🇷 Cria tag anotada com mensagem
+- 🇺🇸 Creates annotated tag with message
+
+**git tag**
+- 🇧🇷 Lista todas as tags
+- 🇺🇸 Lists all tags
+
+**git push origin <tag>**
+- 🇧🇷 Envia tag específica para remoto
+- 🇺🇸 Pushes specific tag to remote
+
+**git push origin --tags**
+- 🇧🇷 Envia todas as tags para remoto
+- 🇺🇸 Pushes all tags to remote
+
+## Comandos Avançados / Advanced Commands
+
+**git rebase <branch>**
+- 🇧🇷 Reaplica commits em cima de outra branch
+- 🇺🇸 Reapplies commits on top of another branch
+
+**git cherry-pick <commit>**
+- 🇧🇷 Aplica um commit específico na branch atual
+- 🇺🇸 Applies a specific commit to current branch
+
+**git blame <arquivo>**
+- 🇧🇷 Mostra quem modificou cada linha do arquivo
+- 🇺🇸 Shows who modified each line of the file
+
+**git show <commit>**
+- 🇧🇷 Mostra detalhes de um commit específico
+- 🇺🇸 Shows details of a specific commit
+
+---
+
+## 💡 Dicas de Uso / Usage Tips
+
+🇧🇷 **Boas práticas:**
+- Sempre faça `git status` antes de commit
+- Use mensagens de commit descritivas
+- Faça commits pequenos e frequentes
+- Sempre faça `git pull` antes de `git push`
+- Crie branches para novas features
+
+🇺🇸 **Best practices:**
+- Always do `git status` before committing
+- Use descriptive commit messages
+- Make small and frequent commits
+- Always `git pull` before `git push`
+- Create branches for new features
